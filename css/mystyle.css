@@ -1,0 +1,21 @@
+@media (min-width: 1200px) {
+  .container {
+    width: 720px;
+  }
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+#footer p {
+	color: #D3D3D3;
+}
+
+#footer a {
+	color: #F08080;
+}
+
+.list-inline>li {
+	padding: 15px;
+}
