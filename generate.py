@@ -13,8 +13,11 @@ def generate():
 		trim_blocks=True )
 	template = env.get_template('template.html')
 	return template.render(profile=data["profile"], edu=data["education"],
-		work=data["work"], project=data["project"], skill=data["skill"])
+		work=data["work"], project=data["project"], skill=data["skill"], 
+		setting=data["setting"])
 
 htmlpage = generate()
-with open("resume.html", 'w') as f:
+filename = "index.html"
+
+with open(filename, 'w') as f:
 	f.write(htmlpage)

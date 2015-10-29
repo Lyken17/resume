@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="Hongyi Zhang">
-  <title>Resume</title>
+  <title>Resume Page</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -16,13 +16,12 @@
   {% block content %}
   <div class="container">
     <div class="page-header">
-      <h1>{{ profile.name }}  <small>{{profile.bio}}</small></h1>
-      <!-- <p><i class="fa fa-envelope-o"></i> {{ profile.email }}</p> -->
+      <h1>{{ profile.name }}  <small>{{ profile.bio }}</small></h1>
     </div>
-    {% if edu %}
+    {% if setting.education %}
     <div class="row">
       <div class="col-md-3">
-        <h3><!-- <i class="fa fa-graduation-cap"></i> -->Education</h3>
+        <h3>Education</h3>
         <p><small>{{ edu.summary }}</small></p>
       </div>
       <div class="col-md-9">
@@ -40,9 +39,9 @@
         {% endfor %}
       </div>
     </div>
-    {% endif %}
-    {% if work %}
     <hr />
+    {% endif %}
+    {% if setting.work %}
     <div class="row">
       <div class="col-md-3">
         <h3>Work Experience</h3>
@@ -61,9 +60,10 @@
         {% endfor %}
       </div>
     </div>
-    {% endif %}
-    {% if project %}
     <hr />
+    {% endif %}
+
+    {% if setting.project %}
     <div class="row">
       <div class="col-md-3">
         <h3>Projects</h3>
@@ -72,8 +72,8 @@
       <div class="col-md-9">
         {% for item in project %}
           <h4 class="inline block">{{item.name}} <span><p style="float:right"><small>{{item.time}}</small></p></span></h4>
+          <p>{{item.summary}}</p>
           <ul>
-            <li>{{item.summary}}</li>
             {% if item.highlight %}
               {% for highlight in item.highlight %}
                 <li>{{highlight}}</li>
@@ -83,9 +83,10 @@
         {% endfor %}
       </div>
     </div>
-    {% endif %}
-    {% if skill %}
     <hr />
+    {% endif %}
+
+    {% if setting.skill %}
     <div class="row">
       <div class="col-md-3">
         <h3>Skills</h3>
@@ -103,17 +104,19 @@
         {% endfor %}
       </div>
     </div>
+    <hr />
     {% endif %}
+
   </div>
   {% endblock %}
   </div>
   <div id="footer">
     {% block footer %}
     <div class="container text-center">
-    <hr />
     <ul class="list-inline">
-      <li><a href="http://github.com/zhanghongyi"><i class="fa fa-3x fa-github-alt"></i></a></li>
-      <li><a href="http://ca.linkedin.com/in/hongyiz"><i class="fa fa-3x fa-linkedin"></i></a></li>
+      <li><a href={{ profile.github }}><i class="fa fa-3x fa-github-alt"></i></a></li>
+      <li><a href={{ profile.linkedin }}><i class="fa fa-3x fa-linkedin"></i></a></li>
+      <li><a href={{ "mailto:" + profile.email }}><i class="fa fa-3x fa-envelope-o"></i></a></li>
     </ul>
     <p>Last updated October, 2015</p>
     <p>&copy; Copyright 2015 by <a href="http://zhanghongyi.github.io/">Hongyi Zhang</a>.</p>
