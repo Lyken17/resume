@@ -12,7 +12,7 @@ education:
     location: Burnaby, BC, Canada
     summary: Major in Computing Science, Bachelor of Science
     time: Sep 2013 - Dec 2015(Expected)
-    highlight: 
+    highlight:
       - "SFU ZJU DDP Entrance Award Scholarship ($5,000)"
       - "Dean's Honour Roll of Summer 2014 and Spring 2015(GPA>3.5)"
   - name: "Zhejiang University"
@@ -69,8 +69,8 @@ project:
     - Implemented using AngularJS in the front-end, node.js with Express framework in the back- end and MongoDB as the engine of database
     - Programmed back-end implementation using node.js and database design
 
-- name: Price Comparison Website 
-  time: Mar - May 2013 
+- name: Price Comparison Website
+  time: Mar - May 2013
   summary: B/S design course project, Zhejiang University
   highlight:
     - Designed and implemented a price comparison website individually using PHP and MySQL which allows users to search for the best value products
@@ -102,3 +102,4 @@ setting:
   work: true
   project: true
   skill: true
+  googleAnalytics: true
