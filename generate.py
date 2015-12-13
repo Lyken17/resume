@@ -12,9 +12,15 @@ def generate():
 		loader=FileSystemLoader( os.path.dirname(os.path.abspath(__file__)) ),
 		trim_blocks=True )
 	template = env.get_template('template.html')
-	return template.render(profile=data["profile"], edu=data["education"],
-		work=data["work"], project=data["project"], skill=data["skill"], 
-		setting=data["setting"])
+	return template.render(
+		profile=data["profile"], 
+		edu=data["education"],
+		work=data["work"], 
+		project=data["project"], 
+		skill=data["skill"], 
+		setting=data["setting"], 
+		research=data["research"], 
+		award=data["award"])
 
 htmlpage = generate()
 filename = "index.html"

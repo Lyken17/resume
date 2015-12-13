@@ -1,24 +1,34 @@
+# ---
 profile:
   name: Hongyi Zhang
-  bio: Yet another idiot who loves CS
-  email: hongyi73.zhang@gmail.com
+  address: 9868 Cameron Street, Burnaby, BC, Canada
+  phone: "+1 (778)861-8703"
+  email: hongyiz@sfu.ca
+  homepage: "http://www.sfu.ca/~hongyiz"
   github: http://github.com/zhanghongyi
   linkedin: http://ca.linkedin.com/in/hongyiz
 
 education:
-  summary: "Dual-Degree Program Co-operated by SFU(Canada) and ZJU(China)"
+  summary: "SFU ZU Dual Degree Program (Degree expected June 2016)"
   university:
   - name: Simon Fraser University
     location: Burnaby, BC, Canada
-    summary: Major in Computing Science, Bachelor of Science
-    time: Sep 2013 - Dec 2015(Expected)
-    highlight:
-      - "SFU ZJU DDP Entrance Award Scholarship ($5,000)"
-      - "Dean's Honour Roll of Summer 2014 and Spring 2015(GPA>3.5)"
+    summary: Bachelor of Science (B.S.) in Computer Science
+    time: Sep 2013 - Dec 2015
   - name: "Zhejiang University"
     location: Hangzhou, China
     time: Aug 2011 - June 2013
-    summary: Major in Computer Science and Technology, Bachelor of Engineering
+    summary: Bachelor of Engineering (B.Eng.) in Computer Science and Technology
+
+research:
+- name: Undergraduate Research Student
+  company: Computational Vision Lab
+  location: Simon Fraser University
+  time: Sep 2015 - Present
+  highlight:
+    - "Supervisors: Professor Brian Funt"
+    - Implementated Metamer Mismatch Volumn algorithm in C
+    - Research in Color Constancy
 
 work:
 - name: Software Engineer Intern
@@ -26,28 +36,46 @@ work:
   company: Arista Networks
   location: Burnaby, BC
   highlight:
-    - Improved internal tools in python to find and match bugs in log files more than 5 times faster
-    - Developed a new feature in the next generation of product to enhance user experience of firmware upgrade
+    - Improved internal tools in Python to speed up finding and matching bugs in log files
+    - Developed a new feature in the next generation of product to enhance user experience of firmware upgrades
 - name: Software Development Engineer Intern
   time: Sep - Dec 2014
   company: Microsoft Game Studio, Bigpark
   location: Vancouver, BC
   highlight:
-    - Developed and maintained the Lua unit test framework using C++ and Lua and keep the custom Visual Studio test adapter (an extension for Visual Studio) in good shape
+    - Developed and maintained the Lua unit test framework using C++ and Lua    
     - Wrote unit tests in Lua for the client layer and engine API verification
-    - Developed Build Verification Test feature in order to run core tests on virtual machines to validate every check-ins using Windows Powershell and Team Foundation Server building tools
+    - Developed Build Verification Test feature to run core tests automatically for every check-ins using Windows Powershell and Team Foundation Server building tools
+
+award:
+- name: Dean's Honour Roll, Summer 2014 and Spring 2015
+  company: Simon Fraser University
+  time: 2014 - 2015
+  highlight:
+    - For attaining a semester GPA of at least 3.5
+- name: SFU ZJU DDP Entrance Awards Scholarship
+  company: Simon Fraser University
+  time: Sep 2013
+  highlight:
+    - For students in SFU ZU Dual Degree Program based on academic achievement
 
 project:
-- name: Texture Synthesis
-  time: Oct 2015
-  summary: Data-driven Image Synthesis course, SFU
+- name: Computational Photography Projects
+  time: Sep - Dec 2015
+  summary: Data-driven Visual Media Synthesis course(CMPT 469), SFU
   highlight:
     - Programmed image synthesis from a small patch of texture by Non-parametric Sampling(Efros's paper)
-    - Tested with self-created synthesis and produced good results
-
+    - Implementated gradient domain editing using the poisson equation with Dirichlet boundary condition
+- name: Open Source Project Contribution
+  time: Sep - Dec 2015
+  summary: CodeIgniter Framework for PHP Web development
+  highlight: 
+    - Implemented the automatic generation of the table of content for the user guide using JavaScript
+    - Actively participated in the official website design
+    - Refactored error handling for the CodeIgniter framework
 - name: Computer Vision Projects
   time: Jan - Apr 2015
-  summary: CMPT412 projects, SFU
+  summary: Computer vision course(CMPT 412), SFU
   highlight:
     - Designed an algorithm to detect and count cigarette butts on various background in images using Matlab
     - Implemented color indexing algorithm to detect objects with color information with Matlab
@@ -56,7 +84,7 @@ project:
 
 - name: Multimedia Experiments
   time: Jan - Apr 2015
-  summary: CMPT365 projects, SFU
+  summary: Multimedia course(CMPT 365), SFU
   highlight:
     - Designed and implemented a software with GUI to read Wav and TIFF files byte by byte(no external library is used) and display them
     - Implemented compressions and decompression for images using Huffman algorithm in C++
@@ -86,10 +114,10 @@ project:
 skill:
 - name: Programming languages
   list:
-  - "Familiar: C/C++, Python, JavaScript, HTML"
-  - "Intermediate: Matlab, Bash, CSS, PHP"
-  - "Beginnner: Swift, C#, Lua"
-  - "Once Touched: Java, Verilog, Haskell, Prolog, Go, PowerShell"
+  - "Familiar: C/C++, Python, Matlab, JavaScript"
+  - "Intermediate: Bash, HTML/CSS, PHP"
+  - "Beginnner: Swift, C#, Lua, Java"
+  - "Once Touched: Verilog, Haskell, Prolog, Go, PowerShell"
 - name: Things I have played with
   list:
   - "OS: MS Windows, Linux, Mac OS"
@@ -98,8 +126,17 @@ skill:
 
 # Section Flags
 setting:
+  research: true
   education: true
   work: true
   project: true
   skill: true
+  award: true
   googleAnalytics: true
+
+# Settings for latex
+mainfont: Hoefler Text
+fontsize: 10pt
+lang: English
+geometry: a4paper, textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.6in
+# ---

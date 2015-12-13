@@ -15,15 +15,15 @@
   {% block content %}
   <div class="container">
     <div class="page-header">
-      <h1>{{ profile.name }}  <small>{{ profile.bio }}</small></h1>
+      <h1>{{ profile.name }}</h1>
     </div>
     {% if setting.education %}
     <div class="row">
       <div class="col-md-3">
         <h3>Education</h3>
-        <p><small>{{ edu.summary }}</small></p>
       </div>
       <div class="col-md-9">
+        <p>{{ edu.summary }}</p>
         {% for item in edu.university %}
             <h4 class="inline block">{{item.name}} <span><p style="float:right"><small>{{item.time}}</small></p></span></h4>
           <p><i class="fa fa-map-marker"></i> <small>{{item.location}}</small></p>
@@ -40,6 +40,29 @@
     </div>
     <hr />
     {% endif %}
+
+    {% if setting.research %}
+    <div class="row">
+      <div class="col-md-3">
+        <h3>Research Experience</h3>
+      </div>
+      <div class="col-md-9">
+        {% for item in research %}
+          <h4 class="inline block">{{item.name}} <span><p style="float:right"><small>{{item.time}}</small></p></span></h4>
+          <p>{{item.company}} <span style="float:right"><small>{{item.location}}</small></span></p>
+          <ul>
+            {% if item.highlight %}
+              {% for highlight in item.highlight %}
+                <li>{{highlight}}</li>
+              {% endfor %}
+            {% endif %}
+          </ul>
+        {% endfor %}
+      </div>
+    </div>
+    <hr />
+    {% endif %}
+
     {% if setting.work %}
     <div class="row">
       <div class="col-md-3">
@@ -62,16 +85,15 @@
     <hr />
     {% endif %}
 
-    {% if setting.project %}
+    {% if setting.award %}
     <div class="row">
       <div class="col-md-3">
-        <h3>Projects</h3>
-        <p><small>Basically selected courseworks</small></p>
+        <h3>Academic Honors & Awards</h3>
       </div>
       <div class="col-md-9">
-        {% for item in project %}
+        {% for item in award %}
           <h4 class="inline block">{{item.name}} <span><p style="float:right"><small>{{item.time}}</small></p></span></h4>
-          <p>{{item.summary}}</p>
+          <p>{{item.company}} <span><small>{{item.location}}</small></span></p>
           <ul>
             {% if item.highlight %}
               {% for highlight in item.highlight %}
@@ -106,6 +128,31 @@
     <hr />
     {% endif %}
 
+    {% if setting.project %}
+    <div class="row">
+      <div class="col-md-3">
+        <h3>Projects</h3>
+        <p><small>Basically selected courseworks</small></p>
+      </div>
+      <div class="col-md-9">
+        {% for item in project %}
+          <h4 class="inline block">{{item.name}} <span><p style="float:right"><small>{{item.time}}</small></p></span></h4>
+          <p>{{item.summary}}</p>
+          <ul>
+            {% if item.highlight %}
+              {% for highlight in item.highlight %}
+                <li>{{highlight}}</li>
+              {% endfor %}
+            {% endif %}
+          </ul>
+        {% endfor %}
+      </div>
+    </div>
+    <hr />
+    {% endif %}
+
+
+
   </div>
   {% endblock %}
   </div>
@@ -117,13 +164,21 @@
       <li><a href={{ profile.linkedin }}><i class="fa fa-3x fa-linkedin"></i></a></li>
       <li><a href={{ "mailto:" + profile.email }}><i class="fa fa-3x fa-envelope-o"></i></a></li>
     </ul>
-    <p>Last updated October, 2015</p>
+    <p id='date'>Last updated time</p>
     <p>&copy; Copyright 2015 by <a href="http://zhanghongyi.github.io/">Hongyi Zhang</a>.</p>
     </div>
     {% endblock %}
   </div>
 </body>
 {% if setting.googleAnalytics %}
+<script>
+window.onload = function() {
+    var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];;
+    var date = new Date();
+
+    document.getElementById('date').innerHTML = 'Last updated ' + months[date.getMonth()] + ' ' + date.getFullYear();
+};
+</script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
