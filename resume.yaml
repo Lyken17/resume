@@ -27,7 +27,7 @@ research:
   time: Sep 2015 - Present
   highlight:
     - "Supervisors: Professor Brian Funt"
-    - Implementated Metamer Mismatch Volumn algorithm in C
+    - Implementated Metamer Mismatch Volume algorithm in C
     - Research in Color Constancy
 
 work:
@@ -48,10 +48,11 @@ work:
     - Developed Build Verification Test feature to run core tests automatically for every check-ins using Windows Powershell and Team Foundation Server building tools
 
 award:
-- name: Dean's Honour Roll, Summer 2014 and Spring 2015
+- name: Dean's Honour Roll
   company: Simon Fraser University
   time: 2014 - 2015
   highlight:
+    - Every enrolled semester from Summer 2014
     - For attaining a semester GPA of at least 3.5
 - name: SFU ZJU DDP Entrance Awards Scholarship
   company: Simon Fraser University
