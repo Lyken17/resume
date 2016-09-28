@@ -120,7 +120,7 @@ skill:
   list:
   - "OS: Linux(Ubuntu for production, Arch for daily), MacOS"
   - "Web development: git, node.js/Express, AngularJS, WAMP/LAMP"
-  - "Emmbed System: Raspberry Pi, FPGA"
+  - "Emmbed System: Raspberry Pi, FPGA "
 
 # Section Flags
 setting:
