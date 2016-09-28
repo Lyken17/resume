@@ -1,139 +1,137 @@
 # ---
 profile:
-  name: Hongyi Zhang
-  address: 9868 Cameron Street, Burnaby, BC, Canada
-  phone: "+1 (778)861-8703"
-  email: hongyiz@sfu.ca
-  homepage: "http://www.sfu.ca/~hongyiz"
-  github: http://github.com/zhanghongyi
-  linkedin: http://ca.linkedin.com/in/hongyiz
+  name: Ligeng Zhu
+  address: 2688 Southcrest Drive, Burnaby, BC, Canada
+  phone: "+1 (778)903-0817"
+  email: lykensyu@gmail.com
+  homepage: "http:lykensyu.com"
+  github: http://github.com/lyken17
+  linkedin: https://www.linkedin.com/in/ligeng-zhu-571844100
 
 education:
-  summary: "SFU ZU Dual Degree Program (Degree expected June 2016)"
+  summary: "SFU ZU Dual Degree Program (Degree expected June 2017)"
   university:
   - name: Simon Fraser University
     location: Burnaby, BC, Canada
     summary: Bachelor of Science (B.S.) in Computer Science
-    time: Sep 2013 - Dec 2015
+    time: Sep 2015 - now
   - name: "Zhejiang University"
     location: Hangzhou, China
-    time: Aug 2011 - June 2013
+    time: Aug 2013 - June 2015
     summary: Bachelor of Engineering (B.Eng.) in Computer Science and Technology
 
 research:
-- name: Undergraduate Research Student
-  company: Computational Vision Lab
+- name: Research Assitant
+  company: GruVI Lab
   location: Simon Fraser University
   time: Sep 2015 - Present
   highlight:
-    - "Supervisors: Professor Brian Funt"
-    - Implementated Metamer Mismatch Volume algorithm in C
-    - Research in Color Constancy
+    - "Supervisors: Professor Ping Tan"
+    - Published paper "Attribute Recognition from Adaptive Parts" on BMVC 2016. (More detail in projects)
+    - Contribution to Garment dataset
+    - Research in 3D Reconstruction
 
-work:
-- name: Software Engineer Intern
-  time: May - Sep 2015
-  company: Arista Networks
-  location: Burnaby, BC
+- name: Research Assitant
+  company: CAD & CG Lab
+  location: Zhejiang Universisty
+  time: Sep 2014 - Jan 2015
   highlight:
-    - Improved internal tools in Python to speed up finding and matching bugs in log files
-    - Developed a new feature in the next generation of product to enhance user experience of firmware upgrades
-- name: Software Development Engineer Intern
-  time: Sep - Dec 2014
-  company: Microsoft Game Studio, Bigpark
-  location: Vancouver, BC
-  highlight:
-    - Developed and maintained the Lua unit test framework using C++ and Lua    
-    - Wrote unit tests in Lua for the client layer and engine API verification
-    - Developed Build Verification Test feature to run core tests automatically for every check-ins using Windows Powershell and Team Foundation Server building tools
+    - Implementated a image depth-detect algorithm
+    - Research in Material Simulation
 
 award:
-- name: Dean's Honour Roll
-  company: Simon Fraser University
-  time: 2014 - 2015
+- name: ACM-ICPC
+  company: Zhejiang University
+  time: April 2015
   highlight:
-    - Every enrolled semester from Summer 2014
-    - For attaining a semester GPA of at least 3.5
-- name: SFU ZJU DDP Entrance Awards Scholarship
-  company: Simon Fraser University
-  time: Sep 2013
+    - Second Prize.
+
+- name: ZJU 13th Mathematical Contest In Modelling
+  company: Zhejiang University
+  time: May 2015
   highlight:
-    - For students in SFU ZU Dual Degree Program based on academic achievement
+    - First prize, ranking 3/127.
 
 project:
-- name: Computational Photography Projects
-  time: Sep - Dec 2015
-  summary: Data-driven Visual Media Synthesis course(CMPT 469), SFU
+- name: Attribute Recognition from Adaptive Parts
+  time: Feb - May 2016
+  summary: Work for BMVC 2016. GruVI Lab, SFU
   highlight:
-    - Programmed image synthesis from a small patch of texture by Non-parametric Sampling(Efros's paper)
-    - Implementated gradient domain editing using the poisson equation with Dirichlet boundary condition
-- name: Open Source Project Contribution
-  time: Sep - Dec 2015
-  summary: CodeIgniter Framework for PHP Web development
-  highlight: 
-    - Implemented the automatic generation of the table of content for the user guide using JavaScript
-    - Actively participated in the official website design
-    - Refactored error handling for the CodeIgniter framework
+    - Proposed an end-to-end deep learning approach to optimize part detection for attribute recognition
+    - Introduced Aspect Ratio Loss, a new loss function to control information loss during spatial transform
+    - Showed improvement on both joint detection and attribute recognition
+
 - name: Computer Vision Projects
-  time: Jan - Apr 2015
+  time: Mar - May 2016
   summary: Computer vision course(CMPT 412), SFU
   highlight:
     - Designed an algorithm to detect and count cigarette butts on various background in images using Matlab
     - Implemented color indexing algorithm to detect objects with color information with Matlab
     - Implemented mean shift algorithm to track objects in video with Matlab
-    - Implemented 3D surface reconstruction given three images under three directions of source lights. A look-up table is used to improve efficiency.
+    - Implemented 3D reconstruction given three images under three directions of source lights with photometric stereo. A look-up table is used to improve efficiency.
 
 - name: Multimedia Experiments
-  time: Jan - Apr 2015
+  time: Mar - May 2016
   summary: Multimedia course(CMPT 365), SFU
   highlight:
-    - Designed and implemented a software with GUI to read Wav and TIFF files byte by byte(no external library is used) and display them
-    - Implemented compressions and decompression for images using Huffman algorithm in C++
+    - Implemented compressions and decompression for images with standard JPEG 2000(Huffman, zig-zag, DCT IDCT) in C++ & Python
+    - Built a image retrival system with Nerual Networks (Inspired by paper "Neural Codes for Image Retrieval"). It reaches mAP 63% on Caltech 256 dataset.
 
-- name: Express Logo
-  time: Feb - Apr 2014
-  summary: Web-based information system course project, SFU
+- name: An Efficient Ray-tracing
+  time: Sep - Dec 2015
+  summary: Computer graphics course(CMPT 361), SFU
   highlight:
-    - Designed and implemented an educational online Logo programming website for children to learn Logo programming with joy, in a group of six
-    - Implemented using AngularJS in the front-end, node.js with Express framework in the back- end and MongoDB as the engine of database
-    - Programmed back-end implementation using node.js and database design
+    - Implemented most functions - shadow, reflection, refraction, diffuse, super-sampling.
+    - Support reading from SMF / OBJ 3d texture file
+    - Use openmp for multithread accelearting
+    - Octree is used to avoid useless collision detection.
 
-- name: Price Comparison Website
-  time: Mar - May 2013
-  summary: B/S design course project, Zhejiang University
-  highlight:
-    - Designed and implemented a price comparison website individually using PHP and MySQL which allows users to search for the best value products
-    - Analysed HTML pages and abstracted information from the targets
 
-- name: BlueRise - Internet of Things
-  time: Feb - May 2013
-  summary: Project training course project, Zhejiang University
+- name: A Movie Search Engine for Douban
+  time: Jul - Aug 2015
+  summary: Information Retrival course, ZJU
   highlight:
-    - Designed and implemented a website called BlueRise for monitoring indoor temperatures
-    - Participated as a member of front-end group focusing on the web implementation using HTML and PHP
+    - Built a distributed web crawler system with scrapy on 8 servers
+    - Implemented a simple Chinese word segmentation algorithm to split collected data
+    - Implemented tf-idf and Naive Bayes algorithms to evaluate pages' weight
+    - Built server with python-flask and UI with bootstrap
+
+- name: Computer Organization Experiments
+  time: Feb - Jun 2015
+  summary: Computer Organization course, ZJU
+  highlight:
+    - Wrote a parser to transform MIPS into binary code.
+    - Implemented single-clock and multiclock using Verilog on VHDL. It can execute the binary code parsed from MIPS.
+
+
 
 skill:
+- name: Languages
+  list:
+  - "Chinese: Native"
+  - "English: Fluent, IELTS 7.0/9.0"
+  - "Japanese: Understand, JTEST N2"
 - name: Programming languages
   list:
-  - "Familiar: C/C++, Python, Matlab, JavaScript"
-  - "Intermediate: Bash, HTML/CSS, PHP"
-  - "Beginnner: Swift, C#, Lua, Java"
-  - "Once Touched: Verilog, Haskell, Prolog, Go, PowerShell"
+  - "Familiar: C/C++, Python, Matlab, Lua"
+  - "Intermediate: Bash, HTML/CSS, JavaScript, Swift, Java "
+  - "Beginnner: Verilog, Scala, Go"
 - name: Things I have played with
   list:
-  - "OS: MS Windows, Linux, Mac OS"
-  - "Version Control: Git, Subversion, Team Foundation System, Perforce"
-  - "Web development: node.js/Express, AngularJS, WAMP/LAMP, CodeIgniter"
+  - "OS: Linux(Ubuntu for production, Arch for daily), MacOS"
+  - "Version Control: Git, beginner with SVN"
+  - "Web development: node.js/Express, AngularJS, WAMP/LAMP"
+  - "Emmbed System: Raspberry Pi, FPGA"
 
 # Section Flags
 setting:
   research: true
   education: true
-  work: true
+  work: false
   project: true
   skill: true
   award: true
-  googleAnalytics: true
+  googleAnalytics: false
 
 # Settings for latex
 mainfont: Hoefler Text
