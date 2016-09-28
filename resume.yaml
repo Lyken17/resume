@@ -9,7 +9,7 @@ profile:
   linkedin: https://www.linkedin.com/in/ligeng-zhu-571844100
 
 education:
-  summary: "SFU ZU Dual Degree Program (Degree expected June 2017)"
+  summary: "SFU ZJU Dual Degree Program "
   university:
   - name: Simon Fraser University
     location: Burnaby, BC, Canada
@@ -40,13 +40,13 @@ research:
     - Research in Material Simulation
 
 award:
-- name: ACM-ICPC
+- name: ACM-ICPC Competition
   company: Zhejiang University
   time: April 2015
   highlight:
     - Second Prize.
 
-- name: ZJU 13th Mathematical Contest In Modelling
+- name: Mathematical Contest In Modelling
   company: Zhejiang University
   time: May 2015
   highlight:
@@ -119,8 +119,7 @@ skill:
 - name: Things I have played with
   list:
   - "OS: Linux(Ubuntu for production, Arch for daily), MacOS"
-  - "Version Control: Git, beginner with SVN"
-  - "Web development: node.js/Express, AngularJS, WAMP/LAMP"
+  - "Web development: git, node.js/Express, AngularJS, WAMP/LAMP"
   - "Emmbed System: Raspberry Pi, FPGA"
 
 # Section Flags
