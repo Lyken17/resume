@@ -81,10 +81,10 @@ project:
   time: Sep - Dec 2015
   summary: Computer graphics course(CMPT 361), SFU
   highlight:
-    - Implemented most functions - shadow, reflection, refraction, diffuse, super-sampling.
+    - Implemented most functions of a render engine - shadow, reflection, refraction, diffuse, super-sampling.
     - Support reading from SMF / OBJ 3d texture file
     - Use openmp for multithread accelearting
-    - Octree is used to avoid useless collision detection.
+    - Octree is used to reduce intersection check
 
 
 - name: A Movie Search Engine for Douban
