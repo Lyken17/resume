@@ -53,6 +53,19 @@ award:
     - First prize, ranking 3/127.
 
 project:
+- name: Colorize gray image using deep neural network
+  time: Sep - Dec 2016
+  summary: Machine Learning course project
+  highlight:
+    - Implemented the state of the art model, and accelerate training time from 3 weeks to 3 days.
+    - Proposed a simple feed-forward network for colorization task, which needs much less training time while keeping competitive results to state-of-the-art model.
+
+- name: Fast artistic style for videos
+  time: Sep - Dec 2016
+  summary: Personal hobbies
+  highlight:
+    - Proposed an artistic style transfer approach. It is stable (no flash between frames) and fast (30x faster than Ruder's method)
+
 - name: Attribute Recognition from Adaptive Parts
   time: Feb - May 2016
   summary: Work for BMVC 2016. GruVI Lab, SFU
@@ -60,15 +73,6 @@ project:
     - Proposed an end-to-end deep learning approach to optimize part detection for attribute recognition
     - Introduced Aspect Ratio Loss, a new loss function to control information loss during spatial transform
     - Showed improvement on both joint detection and attribute recognition
-
-- name: Computer Vision Projects
-  time: Mar - May 2016
-  summary: Computer vision course(CMPT 412), SFU
-  highlight:
-    - Designed an algorithm to detect and count cigarette butts on various background in images using Matlab
-    - Implemented color indexing algorithm to detect objects with color information with Matlab
-    - Implemented mean shift algorithm to track objects in video with Matlab
-    - Implemented 3D reconstruction given three images under three directions of source lights with photometric stereo. A look-up table is used to improve efficiency.
 
 - name: Multimedia Experiments
   time: Mar - May 2016
