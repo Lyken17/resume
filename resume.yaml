@@ -4,7 +4,7 @@ profile:
   address: 2688 Southcrest Drive, Burnaby, BC, Canada
   phone: "+1 (778)903-0817"
   email: lykensyu@gmail.com
-  homepage: "http:lykensyu.com"
+  homepage: "http://lyken17.github.iocd "
   github: http://github.com/lyken17
   linkedin: https://www.linkedin.com/in/ligeng-zhu-571844100
 
@@ -64,7 +64,7 @@ project:
   time: Sep - Dec 2016
   summary: Personal hobbies
   highlight:
-    - Proposed an artistic style transfer approach. It is stable (no flash between frames) and fast (30x faster than Ruder's method)
+    - Proposed an stable (no flash between frames) and fast (30x faster than Ruder's method) artistic style transfer approach for videos. https://zeruniverse.github.io/fast-artistic-videos/
 
 - name: Attribute Recognition from Adaptive Parts
   time: Feb - May 2016
