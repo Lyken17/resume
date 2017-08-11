@@ -9,7 +9,7 @@ profile:
   linkedin: https://www.linkedin.com/in/ligeng-zhu-571844100
 
 education:
-  summary: "SFU ZJU Dual Degree Program "
+  summary: "SFU-ZJU Dual Degree Program "
   university:
   - name: Simon Fraser University
     location: Burnaby, BC, Canada
@@ -21,9 +21,17 @@ education:
     summary: Bachelor of Engineering (B.Eng.) in Computer Science and Technology
 
 research:
+- name: Deep Learning Engineer
+  company: Deep Perceptron Group@TuSimple
+  location: San Diego, California, The United States
+  time: May 2017 - Aug 2017
+  highlight:
+    - "Supervisors: Dr.Panqu Wang"
+    - Road area generation from Lidar point cloud
+
 - name: Research Assitant
-  company: GruVI Lab
-  location: Simon Fraser University
+  company: GruVI Lab@Simon Fraser University
+  location: Vancouver, British Columbia, Canada
   time: Sep 2015 - Present
   highlight:
     - "Supervisors: Professor Ping Tan"
@@ -32,8 +40,8 @@ research:
     - Research in 3D Reconstruction
 
 - name: Research Assitant
-  company: CAD & CG Lab
-  location: Zhejiang Universisty
+  company: CAD & CG Lab@Zhejiang Universisty
+  location: Hangzhou, Zhejiang, China
   time: Sep 2014 - Jan 2015
   highlight:
     - Implementated a image depth-detect algorithm
@@ -53,6 +61,14 @@ award:
     - First prize, ranking 3/127.
 
 project:
+- name: MXbox
+  time: May - Sept 2017
+  summary: A simple, efficient and flexible vision toolbox for mxnet framework.
+  highlight:
+    - Define preprocess as transformation flow.
+    - Efficient and flexible DataLoader.
+    - Rich state-of-the-art models and their pretrained weights.
+
 - name: Colorize gray image using deep neural network
   time: Sep - Dec 2016
   summary: Machine Learning course project
@@ -106,7 +122,6 @@ project:
   highlight:
     - Wrote a parser to transform MIPS into binary code.
     - Implemented single-clock and multiclock using Verilog on VHDL. It can execute the binary code parsed from MIPS.
-
 
 
 skill:
