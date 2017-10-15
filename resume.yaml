@@ -1,7 +1,7 @@
 # ---
 profile:
   name: Ligeng Zhu
-  address: 2688 Southcrest Drive, Burnaby, BC, Canada
+  address: 8888 University Drive, Burnaby, BC, Canada
   phone: "+1 (778)903-0817"
   email: lykensyu@gmail.com
   homepage: "http://lyken17.github.iocd "
@@ -13,14 +13,22 @@ education:
   university:
   - name: Simon Fraser University
     location: Burnaby, BC, Canada
-    summary: Bachelor of Science (B.S.) in Computer Science
-    time: Sep 2015 - now
+    summary: Bachelor of Science (B.S.) in Computer Science. Dual degree program exchange.
+    time: Sep 2015 - present
   - name: "Zhejiang University"
     location: Hangzhou, China
-    time: Aug 2013 - June 2015
+    time: Aug 2013 - present
     summary: Bachelor of Engineering (B.Eng.) in Computer Science and Technology
 
 research:
+- name: Research Assitant
+  company: CVL Lab@Simon Fraser University
+  location: Vancouver, British Columbia, Canada
+  time: Sep 2015 - May 2017
+  highlight:
+    - "Supervisors: Professor Brian Funt"
+    - Research in deep learning and color vision.
+
 - name: Deep Learning Engineer
   company: Deep Perceptron Group@TuSimple
   location: San Diego, California, The United States
@@ -28,11 +36,12 @@ research:
   highlight:
     - "Supervisors: Dr.Panqu Wang"
     - Road area generation from Lidar point cloud
+    - Real time vehicle light detection.
 
 - name: Research Assitant
   company: GruVI Lab@Simon Fraser University
   location: Vancouver, British Columbia, Canada
-  time: Sep 2015 - Present
+  time: Sep 2015 - May 2017
   highlight:
     - "Supervisors: Professor Ping Tan"
     - Published paper "Attribute Recognition from Adaptive Parts" on BMVC 2016. (More detail in projects)
@@ -46,6 +55,20 @@ research:
   highlight:
     - Implementated a image depth-detect algorithm
     - Research in Material Simulation
+
+publication:
+- name: Colorize Color Images
+  company: To appear in 30th Human Vision and Electronic Imaging Conference (HVEIC 2018).
+  time: Jan 2018
+  highlight:
+    - A technique to improve color quality by colorizing it.
+
+- name: Attribute Recognition from Adaptive Parts
+  company: In 27th British Machine Vision Conference (BMVC 2016)
+  time: Oct 2016
+  highlight:
+    - An end-to-end deep learning approach to optimize parts detection for attribute recognition.
+
 
 award:
 - name: ACM-ICPC Competition
@@ -145,6 +168,7 @@ skill:
 setting:
   research: true
   education: true
+  publication: true
   work: false
   project: true
   skill: true

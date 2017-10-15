@@ -15,6 +15,7 @@ def generate():
 	return template.render(
 		profile=data["profile"],
 		edu=data["education"],
+		publication=data["publication"],
 		# work=data["work"],
 		project=data["project"],
 		skill=data["skill"],
